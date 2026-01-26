@@ -484,6 +484,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-observation-xray-lung-finding.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/observation-xray-lung-finding"/>
+         </reference>
+         <name value="Ejemplo de Observation - Hallazgo Radiológico de Pulmón"/>
+         <description value="Observation para documentar hallazgo radiológico normal en radiografía de tórax."/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="DiagnosticReport"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
