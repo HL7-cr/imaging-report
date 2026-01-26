@@ -11,6 +11,9 @@ Usage: #example
 Title: "Ejemplo de Reporte Radiológico X-Ray con Acceso DICOM"
 Description: "Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones DICOM para acceso a imágenes con UIDs válidos de DICOM."
 
+* identifier[0].system = "urn:oid:2.16.840.1.113883.4.6.1"
+* identifier[0].value = "DR-2026-001234"
+
 * status = #final
 * code.coding[0].system = "https://hl7.or.cr/fhir/terminology/CodeSystem/cr-report-codes"
 * code.coding[0].code = #CXR
@@ -25,6 +28,8 @@ Description: "Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones D
 * effectiveDateTime = 2026-01-20T09:15:00-06:00
 * issued = 2026-01-20T10:30:00-06:00
 * performer.display = "Clínica de Radiología San José"
+
+* composition = Reference(composition-xray-example)
 
 * conclusion = "Radiografía de tórax posteroanterior: Pulmones bien expandidos bilateralmente. No hay opacidades localizadas ni consolidaciones. Corazón de tamaño normal. Mediastino dentro de los límites normales. Diafragmas regulares. Sin neumotórax. Hilios pulmonares normales."
 
