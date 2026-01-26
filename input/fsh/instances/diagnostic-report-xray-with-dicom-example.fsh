@@ -31,6 +31,8 @@ Description: "Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones D
 
 * composition = Reference(composition-xray-example)
 
+* result = Reference(observation-xray-lung-finding)
+
 * conclusion = "Radiografía de tórax posteroanterior: Pulmones bien expandidos bilateralmente. No hay opacidades localizadas ni consolidaciones. Corazón de tamaño normal. Mediastino dentro de los límites normales. Diafragmas regulares. Sin neumotórax. Hilios pulmonares normales."
 
 * conclusionCode[0].coding[0].system = "http://snomed.info/sct"

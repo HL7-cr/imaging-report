@@ -232,6 +232,42 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-accession-number-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-accession-number-identifier"/>
+         </reference>
+         <name value="CR Accession Number Identifier"/>
+         <description value="Identificador de número de acceso (Accession Number) para estudios de imágenes médicas."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-composition-imaging-report.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-composition-imaging-report"/>
+         </reference>
+         <name value="CR Composition - Imaging Report"/>
+         <description value="Composición para el documento de reporte de imágenes médicas en Costa Rica. Contiene el texto narrativo estructurado del reporte."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -241,7 +277,7 @@
             <reference value="StructureDefinition/cr-diagnostic-report-ct"/>
          </reference>
          <name value="CR Diagnostic Report - CT (Computed Tomography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Tomografía Computarizada (TC) en Costa Rica."/>
+         <description value="Perfil de Reporte Diagnóstico para estudios de Tomografía Computarizada (TC) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -259,7 +295,7 @@
             <reference value="StructureDefinition/cr-diagnostic-report-mammography"/>
          </reference>
          <name value="CR Diagnostic Report - Mammography"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Mamografía en Costa Rica. Incluye clasificación BI-RADS para evaluación de riesgo oncológico."/>
+         <description value="Perfil de Reporte Diagnóstico para estudios de Mamografía en Costa Rica. Incluye clasificación BI-RADS para evaluación de riesgo oncológico. Estructura alineada con EU IG para interoperabilidad internacional."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -277,7 +313,7 @@
             <reference value="StructureDefinition/cr-diagnostic-report-mri"/>
          </reference>
          <name value="CR Diagnostic Report - MRI (Magnetic Resonance Imaging)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Resonancia Magnética (RM) en Costa Rica."/>
+         <description value="Perfil de Reporte Diagnóstico para estudios de Resonancia Magnética (RM) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -295,7 +331,7 @@
             <reference value="StructureDefinition/cr-diagnostic-report-ultrasound"/>
          </reference>
          <name value="CR Diagnostic Report - Ultrasound (Ecography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Ultrasonido (Ecografía) en Costa Rica."/>
+         <description value="Perfil de Reporte Diagnóstico para estudios de Ultrasonido (Ecografía) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -313,7 +349,7 @@
             <reference value="StructureDefinition/cr-diagnostic-report-xray"/>
          </reference>
          <name value="CR Diagnostic Report - X-Ray (Radiography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Rayos X (Radiografía) en Costa Rica."/>
+         <description value="Perfil de Reporte Diagnóstico para estudios de Rayos X (Radiografía) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -334,6 +370,60 @@
          <description value="Perfil de Estudio de Imagen para Costa Rica. Define los datos requeridos y restricciones para registrar estudios de imagen médica."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-procedure-imaging-acquisition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-procedure-imaging-acquisition"/>
+         </reference>
+         <name value="CR Procedure - Imaging Acquisition"/>
+         <description value="Perfil para procedimientos de adquisición de imágenes médicas en Costa Rica."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-series-instance-uid-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-series-instance-uid-identifier"/>
+         </reference>
+         <name value="CR Series Instance UID Identifier"/>
+         <description value="DICOM Series Instance UID (UID de serie dentro de un estudio)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-study-instance-uid-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-study-instance-uid-identifier"/>
+         </reference>
+         <name value="CR Study Instance UID Identifier"/>
+         <description value="DICOM Study Instance UID (UID raíz del estudio)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -369,6 +459,24 @@
          <name value="Ejemplo de Bundle de Reporte de Imagen con Acceso DICOM"/>
          <description value="Ejemplo de un Bundle tipo document para intercambiar reportes de imágenes médicas con acceso a instancias DICOM mediante UIDs y URLs de DICOM Web."/>
          <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-imaging-report-bundle|0.0.1"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Composition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Composition-composition-xray-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Composition/composition-xray-example"/>
+         </reference>
+         <name value="Ejemplo de Composition para Reporte Radiológico X-Ray"/>
+         <description value="Documento de composición con secciones narrativas para reporte radiológico X-Ray."/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-composition-imaging-report"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -476,6 +584,60 @@
          </reference>
          <name value="Extensión para provincia"/>
          <description value="Extensión para el código de la provincia basado en el ZipCode de Costa Rica."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-hl7idr-impression.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-hl7idr-impression"/>
+         </reference>
+         <name value="HL7 IDR Impression"/>
+         <description value="Impresión radiológica del reporte de imágenes médicas."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-hl7idr-patient-history.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-hl7idr-patient-history"/>
+         </reference>
+         <name value="HL7 IDR Patient History"/>
+         <description value="Historial del paciente relevante al estudio de imágenes médicas."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-hl7idr-recommendation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-hl7idr-recommendation"/>
+         </reference>
+         <name value="HL7 IDR Recommendation"/>
+         <description value="Recomendaciones radiológicas derivadas del reporte de imágenes."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
       </resource>
