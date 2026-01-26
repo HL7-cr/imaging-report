@@ -3,7 +3,7 @@ Id: cr-country-ext
 Title: "Extensión para país"
 Description: "Extensión para el código de país en formato ISO 3166-1 alpha-3."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-country-ext"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-country-ext"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

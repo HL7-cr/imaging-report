@@ -1,7 +1,9 @@
 // Aliases for Imaging Report ValueSets and CodeSystems
 Alias: $ImagingModalitiesSet = https://hl7.or.cr/fhir/terminology/ValueSet/cr-imaging-modalities
-Alias: $ImagingBodySiteSet = https://hl7.org/fhir/ValueSet/body-site
-Alias: $DiagnosticFindingsSet = http://hl7.org/fhir/ValueSet/clinical-findings
+Alias: $ImagingBodySiteSet = https://hl7.or.cr/fhir/terminology/ValueSet/cr-body-sites
+Alias: $DiagnosticFindingsSet = https://hl7.or.cr/fhir/terminology/ValueSet/cr-diagnostic-findings
+Alias: $ReportCodesSet = https://hl7.or.cr/fhir/terminology/ValueSet/cr-report-codes
+Alias: $DiagnosticServiceSectionsCS = https://hl7.or.cr/fhir/terminology/CodeSystem/cr-diagnostic-service-sections
 
 // Core Profile Aliases
 Alias: CRCorePatient = https://hl7.or.cr/fhir/core/StructureDefinition/cr-core-patient

@@ -3,7 +3,7 @@ Id: cr-district-ext
 Title: "Extensión para distrito"
 Description: "Extensión para el código del distrito basado en el ZipCode de Costa Rica."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-district-ext"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-district-ext"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

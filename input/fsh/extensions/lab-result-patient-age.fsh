@@ -3,7 +3,7 @@ Id: cr-lab-result-patient-calculated-age
 Title: "Edad calculada del paciente - Resultados de Laboratorio"
 Description: "Extensión para representar la edad calculada del paciente en un momento dado, derivada de la fecha de nacimiento."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-lab-result-patient-calculated-age"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-lab-result-patient-calculated-age"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

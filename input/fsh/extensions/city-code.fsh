@@ -3,7 +3,7 @@ Id: cr-city-ext
 Title: "Extensión para cantón"
 Description: "Extensión para el código del cantón basado en el ZipCode de Costa Rica."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-city-ext"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-city-ext"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

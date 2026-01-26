@@ -3,7 +3,7 @@ Id: cr-lab-result-patient-religion
 Title: "Religión del paciente - Resultados de Laboratorio"
 Description: "Extensión para representar la religión declarada del paciente, utilizando conceptos de SNOMED CT."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-lab-result-patient-religion"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-lab-result-patient-religion"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

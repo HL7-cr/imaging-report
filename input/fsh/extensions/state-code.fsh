@@ -3,7 +3,7 @@ Id: cr-state-ext
 Title: "Extensión para provincia"
 Description: "Extensión para el código de la provincia basado en el ZipCode de Costa Rica."
 
-* ^url = "https://hl7.or.cr/fhir/laboratory-results/StructureDefinition/cr-state-ext"
+* ^url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-state-ext"
 * ^status = #draft
 * ^version = "1.0.0"
 * ^publisher = "HL7 Costa Rica"

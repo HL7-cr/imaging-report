@@ -9,9 +9,9 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Mamografía en Cos
 * category ^slicing.discriminator.path = "coding.system"
 * category ^slicing.rules = #open
 * category contains radiology 1..1
-* category[radiology].coding.system = "http://terminology.hl7.org/CodeSystem/diagnostic-service-sections"
+* category[radiology].coding.system = $DiagnosticServiceSectionsCS
 * category[radiology].coding.code = #RAD
-* code from http://terminology.hl7.org/ValueSet/report-codes (extensible)
+* code from $ReportCodesSet (extensible)
 * code ^binding.description = "Tipo de reporte de Mamografía"
 * subject 1..1
 * subject only Reference(Patient)
@@ -25,7 +25,7 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Mamografía en Cos
 * result only Reference(Observation)
 * conclusion 0..1
 * conclusionCode only CodeableConcept
-* conclusionCode from http://terminology.hl7.org/ValueSet/clinical-findings (extensible)
+* conclusionCode from $DiagnosticFindingsSet (extensible)
 * presentedForm 0..*
 * basedOn only Reference(ServiceRequest)
 * encounter only Reference(Encounter)

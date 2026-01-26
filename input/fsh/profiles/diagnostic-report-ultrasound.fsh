@@ -9,9 +9,9 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Ultrasonido (Ecogr
 * category ^slicing.discriminator.path = "coding.system"
 * category ^slicing.rules = #open
 * category contains ultrasound 1..1
-* category[ultrasound].coding.system = "http://terminology.hl7.org/CodeSystem/diagnostic-service-sections"
+* category[ultrasound].coding.system = $DiagnosticServiceSectionsCS
 * category[ultrasound].coding.code = #US
-* code from http://terminology.hl7.org/ValueSet/report-codes (extensible)
+* code from $ReportCodesSet (extensible)
 * code ^binding.description = "Tipo de reporte de Ultrasonido"
 * subject 1..1
 * subject only Reference(Patient)
