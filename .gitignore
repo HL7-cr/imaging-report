@@ -1,0 +1,8 @@
+input-cache/
+output/
+temp/
+fsh-generated/
+node_modules/
+.DS_Store
+*.log
+.vscode/

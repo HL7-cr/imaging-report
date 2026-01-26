@@ -1,0 +1,9 @@
+== Suppressed Messages ==
+
+# Experimental CodeSystem warnings
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+# ValueSet links to terminology IG - these are defined in the hl7.fhir.cr.terminology dependency
+The link 'https://hl7.or.cr/fhir/terminology/ValueSet/cr-relationships-set' for "https://hl7.or.cr/fhir/terminology/ValueSet/cr-relationships-set" cannot be resolved
+The link 'https://hl7.or.cr/fhir/terminology/ValueSet/cr-religions-set' for "https://hl7.or.cr/fhir/terminology/ValueSet/cr-religions-set" cannot be resolved

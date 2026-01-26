@@ -1,0 +1,83 @@
+id: hl7.fhir.cr.imaging-report
+packageId: hl7.fhir.cr.imaging-report
+canonical: https://hl7.or.cr/fhir/imaging-report
+name: CRImagingReport
+
+title: HL7 FHIR Costa Rica - Reportes de Imágenes Médicas
+description: >-
+  Guía de implementación de HL7 FHIR Costa Rica - Reportes de Imágenes Médicas. Esta guía
+  define los perfiles, extensiones y otros artefactos FHIR necesarios para el registro
+  de reportes de imágenes médicas (Rayos X, Resonancia Magnética, Tomografía, Mamografía y Ultrasonido) en Costa Rica.
+
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: cgp
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: draft
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 0
+
+status: draft
+version: 0.0.1-ballot
+fhirVersion: 5.0.0
+language: es
+copyrightYear: 2025+
+date: 2026-01-26
+copyright: >-
+  Utilizado con permiso de HL7 International, todos los derechos reservados Licencia Creative Commons
+
+releaseLabel: ci-build
+license: CC-BY-4.0
+jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica"
+publisher:
+  name: Iniciativa HL7 Costa Rica
+  url: https://hl7.or.cr
+  email: info@hl7.or.cr
+
+contact:
+  - name: Iniciativa HL7 Costa Rica
+    telecom:
+      - system: email
+        value: info@hl7.or.cr
+        use: work
+      - system: url
+        value: https://hl7.or.cr
+        use: work
+
+# Dependencias de la IG
+dependencies:
+  hl7.fhir.r5.core: 5.0.0
+  # hl7.fhir.cr.terminology: 0.0.1-ballot  # ValueSets resueltos a través de aliases
+  # hl7.fhir.cr.core: 0.0.1-ballot  # Incorporado directamente en CRLabResultPatient
+
+pages:
+  index.md:
+    title: Inicio
+  gaudi-sealing.md:
+    title: Sellado GAUDÍ
+  downloads.md:
+    title: Descargas
+  credits.md:
+    title: Créditos
+
+# Parámetros de configuración del IG Publisher
+parameters:
+  excludettl: true
+  excludexml: true
+  show-inherited-invariants: false
+  apply-jurisdiction: true
+  apply-publisher: true
+  autoload-resources: true
+  pin-canonicals: pin-all
+  apply-version: false
+  i18n-default-lang: es
+
+menu:
+  Inicio: index.html
+  Artefactos: artifacts.html
+  Sellado GAUDÍ: gaudi-sealing.html
+  Descargas: downloads.html
+  Créditos: credits.html
+
+instanceOptions:
+  manualSliceOrdering: true
