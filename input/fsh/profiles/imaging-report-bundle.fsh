@@ -32,10 +32,43 @@ Description: "Perfil FHIR Bundle para intercambiar reportes de imágenes médica
 * entry.resource ^short = "Recursos contenidos en el Bundle"
 * entry.resource ^definition = "Puede contener Patient, Practitioner, Organization, ImagingStudy, DiagnosticReport (reportes radiológicos) y Composition"
 
-* entry.request 0..1 MS
-* entry.request.method 1..1 MS
-* entry.request.method from http://hl7.org/fhir/ValueSet/http-verb (required)
-* entry.request.url 1..1 MS
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.ordered = true
+
+// Entrada 0: Composition (obligatoria, índice del documento)
+* entry contains composition 1..1 MS
+* entry[composition].resource only Composition
+* entry[composition] ^short = "Composition - Índice del documento"
+* entry[composition] ^definition = "Primera entrada: recurso Composition que actúa como índice narrativo del documento"
+
+// Entrada 1: DiagnosticReport (obligatoria, datos estructurados)
+* entry contains diagnosticReport 1..1 MS
+* entry[diagnosticReport].resource only DiagnosticReport
+* entry[diagnosticReport] ^short = "DiagnosticReport - Reporte clínico"
+* entry[diagnosticReport] ^definition = "Segunda entrada: recurso DiagnosticReport con datos estructurados del reporte"
+
+// Entradas adicionales opcionales: Patient, ImagingStudy, ServiceRequest, Procedure, Observation
+* entry contains patient 0..1 MS
+* entry[patient].resource only Patient
+* entry[patient] ^short = "Patient - Paciente"
+
+* entry contains imagingStudy 0..1 MS
+* entry[imagingStudy].resource only ImagingStudy
+* entry[imagingStudy] ^short = "ImagingStudy - Estudio DICOM"
+
+* entry contains serviceRequest 0..1 MS
+* entry[serviceRequest].resource only ServiceRequest
+* entry[serviceRequest] ^short = "ServiceRequest - Orden de imagen"
+
+* entry contains procedure 0..1 MS
+* entry[procedure].resource only Procedure
+* entry[procedure] ^short = "Procedure - Procedimiento realizado"
+
+* entry contains observation 0..* MS
+* entry[observation].resource only Observation
+* entry[observation] ^short = "Observation - Hallazgos clínicos"
 
 * signature 0..1 MS
 * signature ^short = "Firma digital del Bundle"

@@ -289,103 +289,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-ct.html"/>
+            <valueUri value="StructureDefinition-cr-diagnostic-report.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-ct"/>
+            <reference value="StructureDefinition/cr-diagnostic-report"/>
          </reference>
-         <name value="CR Diagnostic Report - CT (Computed Tomography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Tomografía Computarizada (TC) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-imaging.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-imaging"/>
-         </reference>
-         <name value="CR Diagnostic Report - Imaging"/>
-         <description value="Perfil unificado para reportes diagnósticos de estudios de imagen en Costa Rica (Rayos X, CT, MRI, Mamografía, Ultrasonido). Regla común: reporte final, referencia a Composition y soporte para extensiones HL7IDR y DICOM."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-mammography.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-mammography"/>
-         </reference>
-         <name value="CR Diagnostic Report - Mammography"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Mamografía en Costa Rica. Incluye clasificación BI-RADS para evaluación de riesgo oncológico. Estructura alineada con EU IG para interoperabilidad internacional."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-mri.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-mri"/>
-         </reference>
-         <name value="CR Diagnostic Report - MRI (Magnetic Resonance Imaging)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Resonancia Magnética (RM) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-ultrasound.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-ultrasound"/>
-         </reference>
-         <name value="CR Diagnostic Report - Ultrasound (Ecography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Ultrasonido (Ecografía) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-cr-diagnostic-report-xray.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/cr-diagnostic-report-xray"/>
-         </reference>
-         <name value="CR Diagnostic Report - X-Ray (Radiography)"/>
-         <description value="Perfil de Reporte Diagnóstico para estudios de Rayos X (Radiografía) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."/>
+         <name value="CR Diagnostic Report"/>
+         <description value="Perfil unificado para reportes diagnósticos en Costa Rica: estudios de imagen (Rayos X, CT, MRI, Mamografía, Ultrasonido), laboratorio, patología, etc. Regla común: reporte final, soporte para Composition, y extensiones clínicas."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -530,7 +440,7 @@
          </reference>
          <name value="Ejemplo de Reporte Radiológico X-Ray con Acceso DICOM"/>
          <description value="Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones DICOM para acceso a imágenes con UIDs válidos de DICOM."/>
-         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-diagnostic-report-imaging"/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-diagnostic-report"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
