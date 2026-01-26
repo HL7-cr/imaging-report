@@ -558,8 +558,8 @@
          <reference>
             <reference value="Bundle/bundle-imaging-report-with-dicom-example"/>
          </reference>
-         <name value="Ejemplo de Bundle de Reporte de Imagen con Acceso DICOM"/>
-         <description value="Ejemplo de un Bundle tipo document para intercambiar reportes de imágenes médicas con acceso a instancias DICOM mediante UIDs y URLs de DICOM Web."/>
+         <name value="Bundle Completo de Reporte de Imagen"/>
+         <description value="Documento FHIR Bundle con estructura completa: Composition, DiagnosticReport, Patient, ImagingStudy, ServiceRequest, Procedure, Observation (como EU IG pero simplificado)"/>
          <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-imaging-report-bundle|0.0.1"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -797,7 +797,7 @@
             </page>
             <page>
                <nameUrl value="Bundle-bundle-imaging-report-with-dicom-example.html"/>
-               <title value="Ejemplo de Bundle de Reporte de Imagen con Acceso DICOM"/>
+               <title value="Bundle Completo de Reporte de Imagen"/>
                <generation value="generated"/>
             </page>
             <page>

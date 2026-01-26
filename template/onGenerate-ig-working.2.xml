@@ -214,6 +214,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-bundle-imaging-report-with-dicom-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/bundle-imaging-report-with-dicom-example"/>
+         </reference>
+         <name value="Bundle Completo de Reporte de Imagen"/>
+         <description value="Documento FHIR Bundle con estructura completa: Composition, DiagnosticReport, Patient, ImagingStudy, ServiceRequest, Procedure, Observation (como EU IG pero simplificado)"/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-imaging-report-bundle|0.0.1"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -442,24 +460,6 @@
          <description value="Extensión para representar la edad calculada del paciente en un momento dado, derivada de la fecha de nacimiento."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Bundle"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Bundle-bundle-imaging-report-with-dicom-example.html"/>
-         </extension>
-         <reference>
-            <reference value="Bundle/bundle-imaging-report-with-dicom-example"/>
-         </reference>
-         <name value="Ejemplo de Bundle de Reporte de Imagen con Acceso DICOM"/>
-         <description value="Ejemplo de un Bundle tipo document para intercambiar reportes de imágenes médicas con acceso a instancias DICOM mediante UIDs y URLs de DICOM Web."/>
-         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-imaging-report-bundle|0.0.1"/>
-         <groupingId value="-ex-example"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">

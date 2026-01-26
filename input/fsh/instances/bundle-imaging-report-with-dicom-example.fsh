@@ -57,7 +57,7 @@ Usage: #inline
 * title = "Radiografía de Tórax - Reporte Final"
 * author.display = "Dr. Carlos López Martínez, Radiólogo"
 
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 
 * section[+].title = "Hallazgos Clínicos"
 * section[=].code.coding = $LOINC#72131-6
@@ -73,6 +73,12 @@ Usage: #inline
 * section[=].code.coding = $LOINC#72133-2
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Seguimiento clínico según criterio médico. No se requieren estudios de imagen adicionales en este momento.</p></div>"
+
+* section[+].title = "Findings"
+* section[=].code.coding = $LOINC#18787-6
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Observations and clinical findings from the imaging study.</p></div>"
+* section[=].entry.reference = "urn:uuid:77777777-7777-7777-7777-777777777777"
 
 // ========== DIAGNOSTIC REPORT (Datos estructurados + DICOM UIDs)
 Instance: bundle-diagnostic-report
@@ -94,9 +100,9 @@ Usage: #inline
 * performer.display = "Clínica de Radiología San José"
 * resultsInterpreter.display = "Dr. Carlos López Martínez"
 
-* study = Reference(bundle-imaging-study)
-* result = Reference(bundle-observation)
-* composition = Reference(bundle-composition-imaging)
+* study.reference = "urn:uuid:44444444-4444-4444-4444-444444444444"
+* result.reference = "urn:uuid:77777777-7777-7777-7777-777777777777"
+* composition.reference = "urn:uuid:11111111-1111-1111-1111-111111111111"
 
 * conclusion = "Radiografía de tórax normal sin hallazgos patológicos."
 * conclusionCode.coding = $SNOMED#17621005  // Normal
@@ -117,7 +123,7 @@ Usage: #inline
 
 // HL7IDR Impression Extension
 * extension[+].url = "https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-hl7idr-impression"
-* extension[=].valueReference = Reference(bundle-observation)
+* extension[=].valueReference.reference = "urn:uuid:77777777-7777-7777-7777-777777777777"
 
 // ========== PATIENT (Paciente)
 Instance: bundle-patient
@@ -137,7 +143,7 @@ Usage: #inline
 * identifier.system = "urn:dicom:uid"
 * identifier.value = "1.2.840.113619.2.55.3.2830498741.123"
 * status = #available
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * started = 2026-01-20T09:00:00-06:00
 * numberOfSeries = 1
 * numberOfInstances = 2
@@ -151,7 +157,7 @@ Usage: #inline
 * status = #completed
 * intent = #order
 * code = $SNOMED#71045-9  // Chest X-ray
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * requester.display = "Centro de Salud Primario"
 
 // ========== PROCEDURE (Procedimiento realizado)
@@ -163,10 +169,10 @@ Usage: #inline
 * status = #completed
 * category.coding = $SNOMED#363679005  // Imaging procedure
 * code = $SNOMED#71045-9  // Chest X-ray
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * performer.actor.display = "Técnico en Radiología - Clínica San José"
-* basedOn = Reference(bundle-service-request)
-* report = Reference(bundle-diagnostic-report)
+* basedOn.reference = "urn:uuid:55555555-5555-5555-5555-555555555555"
+* report.reference = "urn:uuid:22222222-2222-2222-2222-222222222222"
 
 // ========== OBSERVATION (Hallazgo radiológico)
 Instance: bundle-observation
@@ -175,7 +181,7 @@ Usage: #inline
 * status = #final
 * code.coding = $SNOMED#18752-6  // Lung finding
 * code.text = "Hallazgo radiológico de pulmones"
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * effectiveDateTime = 2026-01-20T09:15:00-06:00
 * performer.display = "Dr. Carlos López Martínez"
 * valueCodeableConcept.coding = $SNOMED#17621005  // Normal
