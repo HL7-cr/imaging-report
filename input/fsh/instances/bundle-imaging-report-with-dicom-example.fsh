@@ -75,7 +75,7 @@ Usage: #inline
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Seguimiento clínico según criterio médico. No se requieren estudios de imagen adicionales en este momento.</p></div>"
 
 * section[+].title = "Findings"
-* section[=].code.coding = $LOINC#18787-6
+* section[=].code.coding = $LOINC#72131-6
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Observations and clinical findings from the imaging study.</p></div>"
 * section[=].entry.reference = "urn:uuid:77777777-7777-7777-7777-777777777777"
@@ -87,13 +87,13 @@ Usage: #inline
 * identifier.system = "urn:oid:2.16.840.1.113883.4.6.1"
 * identifier.value = "DR-2026-001234"
 * status = #final
-* code.coding = $SNOMED#23078-2  // X-ray report
+* code.coding = $LOINC#72134-0  // Radiography report
 * code.text = "Radiografía de Tórax"
 
 * category[radiology].coding.system = $DiagnosticServiceSectionsCS
 * category[radiology].coding.code = #RAD
 
-* subject = Reference(bundle-patient)
+* subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * effectiveDateTime = 2026-01-20T09:15:00-06:00
 * issued = 2026-01-20T10:30:00-06:00
 
@@ -156,7 +156,7 @@ Usage: #inline
 * identifier.value = "SR-2026-001"
 * status = #completed
 * intent = #order
-* code = $SNOMED#71045-9  // Chest X-ray
+* code = $LOINC#71045-9  // Chest X-ray
 * subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * requester.display = "Centro de Salud Primario"
 
@@ -168,7 +168,7 @@ Usage: #inline
 * identifier.value = "PROC-2026-001"
 * status = #completed
 * category.coding = $SNOMED#363679005  // Imaging procedure
-* code = $SNOMED#71045-9  // Chest X-ray
+* code = $LOINC#71045-9  // Chest X-ray
 * subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * performer.actor.display = "Técnico en Radiología - Clínica San José"
 * basedOn.reference = "urn:uuid:55555555-5555-5555-5555-555555555555"
@@ -179,7 +179,7 @@ Instance: bundle-observation
 InstanceOf: Observation
 Usage: #inline
 * status = #final
-* code.coding = $SNOMED#18752-6  // Lung finding
+* code.coding = $SNOMED#19829001  // Lung finding
 * code.text = "Hallazgo radiológico de pulmones"
 * subject.reference = "urn:uuid:33333333-3333-3333-3333-333333333333"
 * effectiveDateTime = 2026-01-20T09:15:00-06:00

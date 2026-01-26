@@ -33,3 +33,9 @@ Description: "Documento de composición con secciones narrativas para reporte ra
 * section[=].code.coding = $LOINC#72133-2  // Recommendations
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Seguimiento clínico según criterio médico. No se requieren estudios de imagen adicionales en este momento.</p></div>"
+
+* section[+].title = "Findings Observations"
+* section[=].code.coding = $LOINC#72131-6  // Clinical findings
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Observations and clinical findings from the imaging study.</p></div>"
+* section[=].entry = Reference(observation-xray-lung-finding)

@@ -12,7 +12,7 @@ Title: "Ejemplo de Observation - Hallazgo Radiológico de Pulmón"
 Description: "Observation para documentar hallazgo radiológico normal en radiografía de tórax."
 
 * status = #final
-* code.coding = $SNOMED#18752-6  // Lung finding
+* code.coding = $SNOMED#19829001  // Lung finding
 * code.text = "Hallazgo radiológico de pulmones"
 
 * subject.display = "María Rodríguez García"
