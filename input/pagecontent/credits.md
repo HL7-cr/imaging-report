@@ -48,7 +48,7 @@ Para consultas sobre esta guía de implementación, contacte a:
 
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
-| 0.0.1-ballot | 2026-01-25 | Versión inicial - Draft |
+| 0.0.1-draft | 2026-01-25 | Versión inicial - Draft |
 
 ---
 

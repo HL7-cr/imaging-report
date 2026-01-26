@@ -1,0 +1,23 @@
+{
+  "package-id": "hl7.fhir.cr.imaging-report",
+  "title": "HL7 FHIR Costa Rica - Reportes de Imágenes Médicas",
+  "canonical": "https://hl7.or.cr/fhir/imaging-report",
+  "introduction": "Publicaciones de la Guía de Implementación para reportes de imágenes médicas en Costa Rica.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Publicación continua (rama principal / CI build)",
+      "path": "https://build.fhir.org/ig/HL7CostaRica/imaging-report",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.0.1-draft",
+      "desc": "Versión en desarrollo (borrador, no ballot)",
+      "path": "https://hl7.or.cr/fhir/imaging-report/0.0.1-draft",
+      "status": "draft",
+      "sequence": "STU",
+      "date": "2026-01-26"
+    }
+  ]
+}

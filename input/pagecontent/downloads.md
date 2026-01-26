@@ -89,7 +89,7 @@ git clone https://github.com/HL7-cr/imaging-report.git
 cd imaging-report
 
 # Navegar rama específica
-git checkout -b version-0.0.1-ballot origin/version-0.0.1-ballot
+git checkout -b version-0.0.1-draft origin/version-0.0.1-draft
 
 # Ver historial
 git log --oneline
@@ -154,9 +154,9 @@ Ver [Guía de Implementación de Terminología](https://hl7.or.cr/fhir/terminolo
 
 ## Versión Actual e Histórico
 
-### Versión 0.0.1-ballot
+### Versión 0.0.1-draft
 - **Fecha:** Enero 2026
-- **Estado:** Ballot (bajo votación)
+- **Estado:** Draft (borrador)
 - **Cambios:**
   - Versión inicial compilada
   - 6 perfiles principales (ImagingStudy + 5 modalidades)
@@ -191,7 +191,7 @@ npm install hl7.fhir.cr.imaging-report@0.0.1
 git log --oneline input/
 
 # Comparar versiones
-git diff v0.0.1-ballot v0.0.1
+git diff v0.0.1-draft v0.0.1
 ```
 
 ---

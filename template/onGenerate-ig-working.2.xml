@@ -30,7 +30,7 @@
       <valueInteger value="0"/>
    </extension>
    <url value="https://hl7.or.cr/fhir/imaging-report/ImplementationGuide/hl7.fhir.cr.imaging-report"/>
-   <version value="0.0.1-ballot"/>
+   <version value="0.0.1-draft"/>
    <name value="CRImagingReport"/>
    <title value="HL7 FHIR Costa Rica - Reportes de Imágenes Médicas"/>
    <status value="draft"/>
