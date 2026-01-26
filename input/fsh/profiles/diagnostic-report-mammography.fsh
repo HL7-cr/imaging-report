@@ -29,3 +29,7 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Mamografía en Cos
 * presentedForm 0..*
 * basedOn only Reference(ServiceRequest)
 * encounter only Reference(Encounter)
+
+* extension contains DICOMInstanceUID named dicomInstanceUid 0..* MS
+* extension[dicomInstanceUid] ^short = "Información de acceso a imágenes DICOM"
+* extension[dicomInstanceUid] ^definition = "Información DICOM para acceder a las imágenes de Mamografía (UID de instancia, URL de acceso)"

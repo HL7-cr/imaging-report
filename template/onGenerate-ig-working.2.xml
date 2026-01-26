@@ -217,6 +217,24 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-imaging-report-bundle.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-imaging-report-bundle"/>
+         </reference>
+         <name value="Bundle de Reportes de Imágenes Médicas"/>
+         <description value="Perfil FHIR Bundle para intercambiar reportes de imágenes médicas (Rayos X, RM, Tomografía, Mamografía, Ultrasonido) con acceso a imágenes DICOM. Este Bundle contiene estudios de imagen, reportes diagnósticos y referencias DICOM que pueden ser firmados digitalmente con JAdES para garantizar autenticidad e integridad."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-cr-diagnostic-report-ct.html"/>
          </extension>
          <reference>
@@ -332,6 +350,60 @@
          </reference>
          <name value="Edad calculada del paciente - Resultados de Laboratorio"/>
          <description value="Extensión para representar la edad calculada del paciente en un momento dado, derivada de la fecha de nacimiento."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Bundle"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Bundle-bundle-imaging-report-with-dicom-example.html"/>
+         </extension>
+         <reference>
+            <reference value="Bundle/bundle-imaging-report-with-dicom-example"/>
+         </reference>
+         <name value="Ejemplo de Bundle de Reporte de Imagen con Acceso DICOM"/>
+         <description value="Ejemplo de un Bundle tipo document para intercambiar reportes de imágenes médicas con acceso a instancias DICOM mediante UIDs y URLs de DICOM Web."/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-imaging-report-bundle|0.0.1"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DiagnosticReport"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DiagnosticReport-diagnostic-report-xray-with-dicom-example.html"/>
+         </extension>
+         <reference>
+            <reference value="DiagnosticReport/diagnostic-report-xray-with-dicom-example"/>
+         </reference>
+         <name value="Ejemplo de Reporte Radiológico X-Ray con Acceso DICOM"/>
+         <description value="Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones DICOM para acceso a imágenes con UIDs válidos de DICOM."/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-diagnostic-report-xray"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-dicom-instance-uid.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/dicom-instance-uid"/>
+         </reference>
+         <name value="Extensión DICOM Instance UID"/>
+         <description value="Extensión para almacenar el UID de instancia DICOM y la URL o información de acceso a las imágenes médicas digitales en formato DICOM."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
       </resource>
