@@ -82,7 +82,7 @@ Usage: #inline
 
 // ========== DIAGNOSTIC REPORT (Datos estructurados + DICOM UIDs)
 Instance: bundle-diagnostic-report
-InstanceOf: CRDiagnosticReportXRay
+InstanceOf: CRDiagnosticReport
 Usage: #inline
 * identifier.system = "urn:oid:2.16.840.1.113883.4.6.1"
 * identifier.value = "DR-2026-001234"

@@ -6,7 +6,7 @@
 --------------------------------------------------------------------*/
 
 Instance: diagnostic-report-xray-with-dicom-example
-InstanceOf: CRDiagnosticReportXRay
+InstanceOf: CRDiagnosticReport
 Usage: #example
 Title: "Ejemplo de Reporte Radiológico X-Ray con Acceso DICOM"
 Description: "Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones DICOM para acceso a imágenes con UIDs válidos de DICOM."

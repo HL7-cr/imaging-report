@@ -1,8 +1,8 @@
-Profile: CRDiagnosticReportMRI
+Profile: CRDiagnosticReport
 Parent: DiagnosticReport
-Id: cr-diagnostic-report-mri
-Title: "CR Diagnostic Report - MRI (Magnetic Resonance Imaging)"
-Description: "Perfil de Reporte Diagnóstico para estudios de Resonancia Magnética (RM) en Costa Rica. Estructura alineada con EU IG para interoperabilidad internacional."
+Id: cr-diagnostic-report
+Title: "CR Diagnostic Report"
+Description: "Perfil unificado para reportes diagnósticos en Costa Rica: estudios de imagen (Rayos X, CT, MRI, Mamografía, Ultrasonido), laboratorio, patología, etc. Regla común: reporte final, soporte para Composition, y extensiones clínicas." 
 
 * identifier 1..* MS
 * status 1..1 MS
@@ -18,7 +18,7 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Resonancia Magnét
 
 * code 1..1 MS
 * code from $ReportCodesSet (extensible)
-* code ^binding.description = "Tipo de reporte de Resonancia Magnética"
+* code ^binding.description = "Tipo de reporte diagnóstico (todos los tipos: imaging, lab, patología, etc.)"
 
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -39,7 +39,7 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Resonancia Magnét
 
 * study only Reference(ImagingStudy)
 
-* composition 1..1 MS
+* composition 0..1
 * composition only Reference(Composition)
 
 * conclusion 0..1
@@ -54,18 +54,20 @@ Description: "Perfil de Reporte Diagnóstico para estudios de Resonancia Magnét
 
 * encounter only Reference(Encounter)
 
-* extension contains DICOMInstanceUID named dicomInstanceUid 0..* MS
+// Extensión DICOM para UIDs y acceso web (opcional, para estudios de imagen)
+* extension contains DICOMInstanceUID named dicomInstanceUid 0..* 
 * extension[dicomInstanceUid] ^short = "Información de acceso a imágenes DICOM"
-* extension[dicomInstanceUid] ^definition = "Información DICOM para acceder a las imágenes de RM (UID de instancia, URL de acceso)"
+* extension[dicomInstanceUid] ^definition = "Información DICOM para acceder a las imágenes (UIDs y URL de acceso) - aplica principalmente a estudios radiológicos"
 
-* extension contains CRHL7IDRImpression named impression 0..* MS
-* extension[impression] ^short = "Impresión radiológica del reporte"
-* extension[impression] ^definition = "Interpretación profesional del radiólogo sobre los hallazgos"
+// Extensiones HL7IDR para contenido clínico (opcional)
+* extension contains CRHL7IDRImpression named impression 0..* 
+* extension[impression] ^short = "Impresión clínica del reporte"
+* extension[impression] ^definition = "Interpretación profesional sobre los hallazgos"
 
-* extension contains CRHL7IDRRecommendation named recommendation 0..* MS
-* extension[recommendation] ^short = "Recomendaciones radiológicas"
+* extension contains CRHL7IDRRecommendation named recommendation 0..* 
+* extension[recommendation] ^short = "Recomendaciones clínicas"
 * extension[recommendation] ^definition = "Acciones clínicas recomendadas basadas en los hallazgos"
 
-* extension contains CRHL7IDRPatientHistory named patientHistory 0..* MS
+* extension contains CRHL7IDRPatientHistory named patientHistory 0..* 
 * extension[patientHistory] ^short = "Historial del paciente relevante"
 * extension[patientHistory] ^definition = "Información clínica previa que contextualiza el estudio"

@@ -307,6 +307,24 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-cr-diagnostic-report-imaging.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/cr-diagnostic-report-imaging"/>
+         </reference>
+         <name value="CR Diagnostic Report - Imaging"/>
+         <description value="Perfil unificado para reportes diagnósticos de estudios de imagen en Costa Rica (Rayos X, CT, MRI, Mamografía, Ultrasonido). Regla común: reporte final, referencia a Composition y soporte para extensiones HL7IDR y DICOM."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-cr-diagnostic-report-mammography.html"/>
          </extension>
          <reference>
@@ -512,7 +530,7 @@
          </reference>
          <name value="Ejemplo de Reporte Radiológico X-Ray con Acceso DICOM"/>
          <description value="Ejemplo de un reporte diagnóstico X-Ray que incluye extensiones DICOM para acceso a imágenes con UIDs válidos de DICOM."/>
-         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-diagnostic-report-xray"/>
+         <exampleCanonical value="https://hl7.or.cr/fhir/imaging-report/StructureDefinition/cr-diagnostic-report-imaging"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
