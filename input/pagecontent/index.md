@@ -68,13 +68,6 @@ Cuando sea publicada en el HL7 FHIR npm registry, esta IG dependerá de:
 - **HL7 FHIR Costa Rica - Core IG**: Para perfiles de Patient, Practitioner, Organization
 - **HL7 FHIR Costa Rica - Terminology IG**: Para códigos y conjuntos de valores
 
-## Colaboradores
-
-- **Ministerio de Salud de Costa Rica**
-- **Caja Costarricense de Seguro Social (CAJA)**
-- **Iniciativa HL7 Costa Rica**
-- **DHIT Costa Rica**
-
 ## Licencia
 
 Esta guía de implementación está licenciada bajo Creative Commons Attribution 4.0 Internacional (CC-BY-4.0).
