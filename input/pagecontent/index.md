@@ -44,6 +44,7 @@ Esta guía de implementación aborda:
 | **CRDiagnosticReport-CT** | Reporte de Tomografía Computarizada |
 | **CRDiagnosticReport-Mammography** | Reporte de Mamografía |
 | **CRDiagnosticReport-Ultrasound** | Reporte de Ultrasonido (Ecografía) |
+| **CRDiagnosticReport-Dental** | Reporte de Imágenes Odontológicas |
 
 ## Escenarios Clínicos
 
@@ -61,6 +62,9 @@ Estudio especializado de mama con clasificación BI-RADS. Integración con criba
 
 ### Ultrasonido (Ecografía)
 Estudio dinámico en tiempo real. Incluye mediciones biométricas y evaluación Doppler.
+
+### Imágenes Odontológicas
+Estudios radiográficos dentales con reporte de hallazgos odontológicos específicos.
 
 ## Interoperabilidad con Core IG
 
