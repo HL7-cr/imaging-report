@@ -3,10 +3,10 @@ packageId: hl7.fhir.cr.imaging-report
 canonical: https://hl7.or.cr/fhir/imaging-report
 name: CRImagingReport
 
-title: HL7 FHIR Costa Rica - Reportes de Imágenes Médicas
+title: Reportes de Imágenes Médicas FHIR® - Costa Rica
 description: >-
-  Guía de implementación de HL7 FHIR Costa Rica - Reportes de Imágenes Médicas. Esta guía
-  define los perfiles, extensiones y otros artefactos FHIR necesarios para el registro
+  Guía de implementación de HL7® FHIR® Costa Rica - Reportes de Imágenes Médicas. Esta guía
+  define los perfiles, extensiones y otros artefactos FHIR® necesarios para el registro
   de reportes de imágenes médicas (Rayos X, Resonancia Magnética, Tomografía, Mamografía y Ultrasonido) en Costa Rica.
 
 extension:
@@ -24,18 +24,18 @@ language: es
 copyrightYear: 2025+
 date: 2026-01-26
 copyright: >-
-  Utilizado con permiso de HL7 International, todos los derechos reservados Licencia Creative Commons
+  Derechos de autor (c) 2025+, Iniciativa HL7® Costa Rica. Este trabajo se distribuye bajo la licencia CC-BY-4.0. HL7®, FHIR® y el logotipo FHIR (diseño de llama) son marcas registradas de Health Level Seven International. Su uso no implica respaldo por parte de HL7®. El contenido normativo de FHIR® es © HL7.org 2011+. Todos los derechos reservados.
 
 releaseLabel: ci-build
 license: CC-BY-4.0
 jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica"
 publisher:
-  name: Iniciativa HL7 Costa Rica
+  name: Iniciativa HL7® Costa Rica
   url: https://hl7.or.cr
   email: info@hl7.or.cr
 
 contact:
-  - name: Iniciativa HL7 Costa Rica
+  - name: Iniciativa HL7® Costa Rica
     telecom:
       - system: email
         value: info@hl7.or.cr

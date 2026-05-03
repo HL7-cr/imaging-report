@@ -2,7 +2,7 @@
 
 ### Contribuyentes
 
-Esta Guía de Implementación ha sido desarrollada por el Grupo de Trabajo en FHIR de Costa Rica, incluyendo representantes de:
+Esta Guía de Implementación ha sido desarrollada por el Grupo de Trabajo en FHIR® de Costa Rica, incluyendo representantes de:
 
 - **Ministerio de Salud de Costa Rica**
 - **Caja Costarricense de Seguro Social (CAJA)**
@@ -11,7 +11,7 @@ Esta Guía de Implementación ha sido desarrollada por el Grupo de Trabajo en FH
 
 ### Estándares y Especificaciones Utilizadas
 
-- **HL7 FHIR R5.0.0** (Fast Healthcare Interoperability Resources)
+- **HL7® FHIR® R5.0.0** (Fast Healthcare Interoperability Resources)
   - Specification: http://hl7.org/fhir/R5/
   
 - **FHIR Shorthand (FSH) 3.0.0**
@@ -26,7 +26,7 @@ Esta Guía de Implementación ha sido desarrollada por el Grupo de Trabajo en FH
 ### Herramientas Utilizadas
 
 - **SUSHI 3.17.0**: FSH to FHIR Compiler
-- **HL7 FHIR IG Publisher 2.0.30**: Generador de especificaciones
+- **HL7® FHIR® IG Publisher 2.0.30**: Generador de especificaciones
 - **Jekyll**: Static site generator
 
 ### Agradecimientos
@@ -49,6 +49,23 @@ Para consultas sobre esta guía de implementación, contacte a:
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
 | 0.0.1-draft | 2026-01-25 | Versión inicial - Draft |
+
+---
+
+## Licencia
+
+**Creative Commons Attribution 4.0 International (CC-BY-4.0)**
+
+Este trabajo puede ser usado, copiado, modificado y distribuido con atribución al autor original.
+Vea: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/){:target="_blank"}
+
+---
+
+## Aviso de Marcas Registradas HL7®
+
+HL7®, FHIR® y el logotipo FHIR (diseño de llama) son marcas registradas de Health Level Seven International. Su uso en esta guía no implica respaldo por parte de HL7®. Para más información, consulte la [Política de Propiedad Intelectual de HL7](https://www.hl7.org/legal/ippolicy.cfm){:target="_blank"}.
+
+Esta guía de implementación fue desarrollada usando el estándar HL7® FHIR® versión 5.0.0 (R5). El contenido normativo de FHIR® es © HL7.org 2011+. Todos los derechos reservados.
 
 ---
 

@@ -1,4 +1,4 @@
-# HL7 FHIR Costa Rica - Reportes de Imágenes Médicas
+# HL7® FHIR® Costa Rica - Reportes de Imágenes Médicas
 
 ### Consideraciones Importantes
 
@@ -22,7 +22,9 @@ Para conocer el estado oficial de esta guía, contacte al Ministerio de Salud o 
 
 ## Introducción
 
-Bienvenido a la Guía de Implementación de Reportes de Imágenes Médicas (IG) de HL7 FHIR para Costa Rica. Esta especificación define los perfiles, extensiones y terminología para el registro estandarizado de reportes de imágenes diagnósticas en el contexto costarricense.
+Bienvenido a la Guía de Implementación de Reportes de Imágenes Médicas (IG) de HL7® FHIR® para Costa Rica. Esta especificación define los perfiles, extensiones y terminología para el registro estandarizado de reportes de imágenes diagnósticas en el contexto costarricense.
+
+> **Aviso de marcas registradas:** HL7®, FHIR® y el logotipo FHIR (diseño de llama) son marcas registradas de Health Level Seven International. Su uso en esta guía no implica respaldo por parte de HL7®.
 
 ## Alcance
 
@@ -68,9 +70,9 @@ Estudios radiográficos dentales con reporte de hallazgos odontológicos especí
 
 ## Interoperabilidad con Core IG
 
-Cuando sea publicada en el HL7 FHIR npm registry, esta IG dependerá de:
-- **HL7 FHIR Costa Rica - Core IG**: Para perfiles de Patient, Practitioner, Organization
-- **HL7 FHIR Costa Rica - Terminology IG**: Para códigos y conjuntos de valores
+Cuando sea publicada en el HL7® FHIR® npm registry, esta IG dependerá de:
+- **HL7® FHIR® Costa Rica - Core IG**: Para perfiles de Patient, Practitioner, Organization
+- **HL7® FHIR® Costa Rica - Terminology IG**: Para códigos y conjuntos de valores
 
 ## Licencia
 
